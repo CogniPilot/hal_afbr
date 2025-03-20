@@ -432,6 +432,14 @@ uint32_t Argus_GetChipID(argus_hnd_t * hnd);
  *****************************************************************************/
 s2pi_slave_t Argus_GetSPISlave(argus_hnd_t * hnd);
 
+/*!***************************************************************************
+ * @brief   Gets the API handle for the specified SPI hardware slave.
+ *
+ * @param   spi_slave The SPI hardware slave identifier.
+ * @return  The API handle; contains all internal states and data.
+ *****************************************************************************/
+argus_hnd_t *Argus_GetHandle(s2pi_slave_t spi_slave);
+
 /*! @} */
 
 /*!**************************************************************************
